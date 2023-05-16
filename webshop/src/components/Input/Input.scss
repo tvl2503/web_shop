@@ -1,0 +1,23 @@
+.input{
+    margin-top: 8px;
+    input{
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        width: 100%;
+        border-radius: 4px;
+        outline: none;
+        margin-top: 5px;
+    }
+    input:focus{
+        border: 1px solid #ff324D;
+    }
+    
+    .input-message{
+        color: #ff324D;
+        padding: 5px;
+    }
+    label{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

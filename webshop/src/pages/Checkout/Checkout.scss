@@ -1,0 +1,49 @@
+.order{
+    &--address{
+        padding: 12px 16px;
+        background-color: #fff;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        &__add{
+            margin-top: 16px;
+            margin-left: 24px;
+            button{
+                background-color: transparent;
+                border: none;
+            }
+            &__form{
+                margin: 10px 24px;
+                .button--submit__address{
+                    display: flex;
+                    margin-top: 20px;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+    .title{
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 16px;
+        border-bottom: 1px dotted #ccc;
+    }
+    &--method--payment{
+        padding: 12px 16px;
+        background-color: #fff;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    &--payment{
+        display: flex;
+        justify-content: flex-end;
+        button{
+            margin: 20px;
+            cursor: pointer;
+            padding: 8px 32px;
+            border: none;
+            background-color: crimson;
+            color: #fff;
+            border-radius: 8px;
+        }
+    }
+}

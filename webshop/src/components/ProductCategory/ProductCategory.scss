@@ -1,0 +1,23 @@
+.product--category{
+    padding: 70px 0 30px;
+    &__banner{
+        position: relative;
+        &__title{
+            color: var(--txt-second-color);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            h2{
+                font-size: 36px;
+                margin-bottom: 13px;
+            }
+            span{
+                padding-top: 10px;
+                font-style: italic;
+            }
+        }
+    }
+}

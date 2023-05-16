@@ -1,0 +1,18 @@
+@import "../../components/GlobalStyles/mixin";
+.content{
+    display: flex;
+    &--list--product{
+        text-align: center;
+    }
+    @include mobile{
+        display: block;
+    }
+    &--list--product{
+        text-align: center;
+        .pagination{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+}

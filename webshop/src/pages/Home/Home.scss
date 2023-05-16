@@ -1,0 +1,154 @@
+@import "../../components/GlobalStyles/mixin";
+.home{
+    width: 100%;
+    text-align: center;
+    .feature--product{
+        padding: 50px 0;
+        &__title{
+
+            margin-bottom: 13px;
+            &__main{
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 13px;
+                span{
+                    font-size: 30px;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        right: -110px;
+                        background: #333;
+                        width: 80px;
+                        height: 2px;
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: -110px;
+                        background: #333;
+                        width: 80px;
+                        height: 2px;
+                    }
+                    @include mobile{
+                        &::after, &::before{
+                            height: 0;
+                            width: 0;
+                        }
+                        font-size: 22px;
+                    }
+                }
+            }
+            &__text{
+                font-style: italic;
+                font-size: 18px;
+                color: #999;
+                font-weight: 600;
+                padding-top: 5px;
+            }
+        }
+        &__menu{
+            &__tap{
+                &__caption{
+                    cursor: pointer;
+                    margin-bottom: 25px;
+                    justify-content: center;
+                    &__item{
+                        padding: 10px 20px;
+                        color: #333;
+                        border-radius: 30px;
+                        margin: 0 5px;
+                        border: 2px solid #fff;
+                        font-weight: 600;
+                        &.active{
+                            color: #000;
+                            font-weight: 700;
+                            border: 2px solid #f11a28;
+                        }
+                        &:hover{
+                            color: #000;
+                            font-weight: 700;
+                            border: 2px solid #f11a28;
+                        }
+                    }
+                }
+            }
+        }
+        &__other{
+            button{
+                cursor: pointer;
+                padding: 10px 20px;
+                background-color: #fff;
+                border: 1px solid #333;
+                color: #333333;
+                border-radius: 30px;
+                margin-top: 10px;
+                font-size: 16px;
+                font-family: 'Quicksand', sans-serif;
+                &:hover{
+                    background-color: var(--main-second-bg);
+                    color: var( --txt-second-color);
+                    border: 1px solid var(--main-second-bg);
+
+                }
+            }
+        }
+    }
+    .why--note{
+        background-color: #f2f2f2;
+        &__img{
+            text-align: start;
+        }
+        &__main{
+            text-align: start;
+            width: 70%;
+            @include tablet{
+                width: 100%;
+                padding: 20px;
+            }
+            &__title{
+                padding-top: 100px;
+                color: var(--txt-red-color);
+                margin-bottom: 40px;
+                padding-bottom: 10px;
+                font-size: 36px;
+                position: relative;
+                &::before{
+                    content: "";
+                    background: var(--main-second-bg);
+                    height: 3px;
+                    width: 100px;
+                    position: absolute;
+                    bottom: 0 ;
+                }
+            }
+            &__content{
+                &__item{
+                    display: flex;
+                    margin-bottom: 40px;
+                    width: 100%;
+                    &__icon{
+                        width: 20%;
+                        padding-right: 40px;
+                        img{
+                            width: 45px;
+                        }
+                    }
+                    .title{
+                        width: 80%;
+                        h3{
+                            font-size: 16px;
+                            font-weight: normal;
+                            margin-bottom: 13px;
+                        }
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+$font-family: "Quicksand", sans-serif;
+
+$txt-main-color: #000000;
+$txt-second-color: #ffffff;
+
+$main-bg: #ffffff;
+$main-second-bg: #DE0000;
+$bg-black: #000000;
+
+$header-height: 127px;
+$header-tablet-height: 60px;
+:root{
+    --header-tablet-height: 60px;
+    --font-family: "Quicksand", sans-serif;
+
+    --txt-main-color: #000000;
+    --txt-second-color: #ffffff;
+    --txt-red-color: #DE0000;
+
+    --main-bg: #ffffff;
+    --main-second-bg: #DE0000;
+    --bg-black: #000000;
+
+    --header-height: 127px;
+}
+$colors: (
+    "blue": #4267b2,
+    "orange": #fbb96b,
+    "pink": #fe7e73,
+    "white": #fff,
+    "black": #000,
+    "red": #ff0000, 
+    "yellow": yellow,
+    "green": green
+);
+
+$mobile-width: 640px;
+$tablet-width: 992px;
+
+$numbers: (0, 1, 2, 3, 4, 5, 6, 7, 8);

@@ -1,0 +1,111 @@
+@import "../GlobalStyles/mixin";
+.product--card{
+    margin-bottom: 25px;
+    position: relative;
+    &__img{
+        height: 280px;
+        @include mobile{
+            height: 190px;
+
+        }
+        padding: 10px;
+        position: relative;
+        a{
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            float: left;
+            img{
+                width: 100%;
+            }
+        }
+        &__quickview{
+            opacity: 0;
+            text-align: center;
+            background-color: var(--main-second-bg);
+            position: absolute;
+            transform: translateY(280px);
+            padding: 13px 0;
+            left: 0;
+            width: 100%;
+            color: var(--txt-second-color);
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            @include mobile{
+                transform: translateY(190px);
+                padding: 5px 0;
+                font-size: 14px;
+            }
+        }
+    }
+    &__text{
+        padding: 15px 20px 0;
+        text-align: start;
+        &__title{
+            padding-top: 15px;
+            font-size: 14px;
+            min-height: 75px;
+            font-weight: 700;
+            @include mobile{
+                padding-top: 5px;
+                font-size: 12px;
+                height: 50px;
+
+            }
+        }
+        &__price{
+            font-size: 18px;
+            padding-bottom: 10px;
+            display: flex;
+            .price__old{
+                color: #ccc;
+                text-decoration: line-through;
+                margin-left: 20px;
+            }
+            @include mobile{
+                font-size: 14px;
+           
+
+            }
+        }
+    }
+    .percent{
+        position: absolute;
+        font-size: 13px;
+        margin: 0;
+        color: #fff;
+        top: 5px;
+        right: 15px;
+        font-weight: 700;
+        background: #db0000;
+        border-radius: 50%;
+        width: 37px;
+        height: 37px;
+        line-height: 37px;
+        transition: all .5s;
+        opacity: 0;
+    }
+    &:hover{
+        box-shadow: 0px 0px 10px #999;
+        .product--card__img{
+            a img{
+                transform: scale(1.1);
+                transition: all 5s;
+            }
+            &__quickview{
+                opacity: 1;
+                transform: translateY(240px);
+                @include mobile{
+                    transform: translateY(160px);
+        
+                }
+                transition: transform  .5s ease;
+            }
+        }
+        .percent{
+            opacity: 1;
+        }
+    }
+}

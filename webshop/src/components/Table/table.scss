@@ -1,0 +1,33 @@
+.table-wrapper {
+    overflow-y: auto;
+
+    table {
+        width: 100%;
+        min-width: 400px;
+        border-spacing: 0;
+        text-align: center;
+        thead {
+            background-color: #fafafb;
+            color: #455560;
+        }
+
+        tr {
+            text-align: left;
+        }
+
+        th,
+        td {
+         text-align: center;
+          
+            padding: 15px 10px;
+        }
+
+        tbody>tr:hover {
+            background-color: #FF919D;
+            color: #fff;
+        }
+        img{
+            width: 60px;
+        }
+    }
+}

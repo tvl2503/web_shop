@@ -1,0 +1,49 @@
+
+@import "../GlobalStyles/mixin";
+.slider{
+    position: relative;
+    &__item{
+        display: none;
+        &.active{
+            display: block;
+            animation: slideImage 3s alternate;
+        }
+    }
+    &__control{
+        padding: 0 50px;
+        @include mobile{
+            padding: 0 5px;
+            font-size: 1rem;
+        }
+        position: absolute;
+        display: flex;
+        width: 100%;
+        top: 50%;
+        justify-content: space-between;
+        color: rgb(97, 94, 94);
+        font-size: 2rem;
+        &__item{
+            background-color: black;
+            padding: 10px 20px;
+            border-radius: 50%;
+            &:hover{
+                color: #fff;
+            }
+        }
+        @include tablet{
+            top: 40%;
+            &__item{
+                padding: 5px 15px;
+            }
+        }
+    }
+}
+@keyframes slideImage {
+    0% {
+        opacity: 0.75;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}

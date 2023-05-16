@@ -1,0 +1,25 @@
+.breadcrumb{
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    display: flex;
+    list-style: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    li ~ li {
+        &::before{
+            content: "/  ";
+            color: #666;
+            margin-left: 5px;
+        }
+    }
+    li{
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color: #666;
+        }
+        &.active{
+            color: #DE0000;
+        }
+    }
+}
